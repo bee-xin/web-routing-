@@ -1,0 +1,38 @@
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.navigation {
+  display: flex;
+  width: 100%;
+  height: 72.8667px;
+  margin: 0px;
+  box-shadow: 1px 1px 10px black;
+  gap: 2px;
+}
+.navigation div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px;
+  gap: 10px;
+}
+.ham {
+  margin-left: 14px;
+}
+@media screen and (min-width: 389px) {
+  .navigation {
+    justify-items: center;
+    height: 45.8667px;
+    border: 2px solid black;
+  }
+  .navigation > div {
+    height: 45.8667px;
+    flex-direction: row;
+    gap: 10px;
+    margin-right: 10px;
+    padding: 11px;
+    /* border: 2px solid black; */
+    justify-content: space-between;
+  }
+}
