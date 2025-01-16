@@ -1,0 +1,13 @@
+.Aboutus {
+  display: flex;
+}
+.mgn {
+  margin: 20px;
+  text-align: justify;
+  color: #3a505f;
+  font-weight: 500;
+}
+
+img {
+  height: 100%;
+}

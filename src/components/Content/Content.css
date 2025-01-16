@@ -1,0 +1,41 @@
+img {
+  width: 100%;
+  height: 475.25px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  position: top;
+}
+.image-back {
+  background-image: url("subha.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 20rem;
+}
+.sub-container {
+  margin-top: 35px;
+  margin-left: 18px;
+}
+.p1-color {
+  color: deepskyblue;
+}
+h1 {
+  color: midnightblue;
+  font-family: "Montserrat", sans-serif;
+}
+button {
+  background-color: deepskyblue;
+  color: white;
+  border-radius: 3px;
+  width: 112px;
+  height: 43px;
+  border: 1px solid deepskyblue;
+  margin-top: 20px;
+}
+
+.p2 {
+  width: 87%;
+}
