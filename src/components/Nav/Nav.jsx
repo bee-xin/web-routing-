@@ -13,16 +13,22 @@ function Nav() {
         <a className="sm-icon" href="#">
           Subha Bihani{" "}
         </a>
-        <div onClick={() => setShowMediaIcon(!showMediaIcon)}>
+        <div
+          onClick={() => {
+            console.log("Before:", showMediaIcon);
+            setShowMediaIcon(!showMediaIcon);
+            console.log("After:", !showMediaIcon);
+          }}
+        >
           <RxHamburgerMenu className="ham" />
         </div>
       </div>
-      <div className={showMediaIcon ? "mobile-nav-links" : "nav-links"}>
+      <div className={`mobile-nav-links ${showMediaIcon ? "active" : ""}`}>
         <ul className="links">
           <li>
             <NavLink to={"/home"}>Home</NavLink>
           </li>
-          <li className="about">
+          <li>
             <NavLink to={"/about"}>About us</NavLink>
           </li>
           <li>

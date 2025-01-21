@@ -1,0 +1,16 @@
+footer {
+  background-color: #65258a;
+  color: white;
+  padding: 20px;
+  text-align: justify;
+}
+footer p {
+  font-size: 12px;
+}
+.links {
+  display: flex;
+}
+.list01 {
+  list-style: none;
+  font-size: 12px;
+}
