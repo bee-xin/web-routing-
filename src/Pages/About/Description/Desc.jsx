@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router";
 import { data } from "../../../assets/data";
+
 function Desc() {
   const params = useParams();
   if (isNaN(params.desc)) {

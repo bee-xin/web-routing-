@@ -10,6 +10,7 @@ import Portfolio from "./Pages/Portfolio/Portfolio";
 import Desc from "./Pages/About/Description/Desc";
 import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
+import Description from "./Pages/About/Description/Description";
 function App() {
   return (
     <div>
@@ -19,10 +20,14 @@ function App() {
         <Route index element={<Home></Home>} />
         <Route path="/home" element={<Home></Home>} />
         <Route path="/about" element={<About></About>} />
-        <Route path="/about/:desc" element={<Desc></Desc>} />
+        {/* <Route path="/about/:desc" element={<Desc></Desc>} /> */}
         <Route path="/contact" element={<Contact></Contact>} />
         <Route path="/portfolio" element={<Portfolio></Portfolio>} />
         <Route path="/services" element={<Services></Services>} />
+        <Route
+          path="/about/:description"
+          element={<Description></Description>}
+        />
       </Routes>
       <Footer />
     </div>

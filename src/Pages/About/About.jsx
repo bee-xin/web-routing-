@@ -1,14 +1,15 @@
 import React from "react";
-import { data } from "../../assets/data";
+// import { data } from "../../assets/data";
 import { NavLink } from "react-router";
+import { servicesdata } from "../../assets/servicesdata";
 function About() {
   return (
     <div>
-      {data.map((item) => (
+      {servicesdata.map((item) => (
         <div key={item.id}>
-          Name: {item.name}
+          Name: {item.heading}
           <NavLink to={"/about/" + item.id}>
-            <button>See Description of {item.name}</button>
+            <button>See Description of {item.heading}</button>
           </NavLink>
         </div>
       ))}
